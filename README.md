@@ -1,7 +1,7 @@
 Embedded Final Project
 =============
 
-This code is for the final project of the Embedded Systems course taught by [Dr. Mohsen Ansari](https://scholar.google.com/citations?user=Dhfls4sAAAAJ&hl=en) in fall semester of 2022.
+This code is for the final project of the Embedded Systems course taught by [Dr. Mohsen Ansari](https://scholar.google.com/citations?user=Dhfls4sAAAAJ&hl=en) in the fall semester of 2022 at Sharif University of Technology.
 
 Collaborators:
 - [Mohammad Abolnejadian](https://github.com/theablemo)
