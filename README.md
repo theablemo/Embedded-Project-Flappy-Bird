@@ -1,55 +1,37 @@
-FlapPyBird
-===============
+Embedded Final Project
+=============
 
-A Flappy Bird Clone made using [python-pygame][pygame]
+This code is for the final project of Embedded Systems course taught by Dr.Mohsen Ansari on fall semester of 2022.
 
-Setup (as tested on MacOS)
----------------------------
+Contributers:
+- [Mohammad Abolnejadian](https://github.com/theablemo)
+- [Kian Omoomi](https://github.com/kianomoomi)
+- [Mohammadali Khodabandelou]()
 
-1. Install Python 3.x (recommended) 2.x from [here](https://www.python.org/download/releases/) (Or use your preffered package manager)
+# Introduction
 
-1. Install [pipenv]
+This project is meant to be ran on a Raspberry Pi and develop students' skill on working with Raspberry Pi, its GPIO, and different hardware modules such as 7segment LED, active buzzer, RFID, etc. 
 
-1. _Optional_: Install PyGame 1.9.x from [here](http://www.pygame.org/download.shtml)
+In this project, we made a Flappy Bird game which can be run on a Raspberry Pi and the bird can jump by hearing the clap of a hand! The game was initially forked from [here](https://github.com/sourabhv/FlapPyBird), but as we neede more features such as authentication and interacting with hardware modules, we changed it drastically. 
 
-   On MacOS, pipenv will install PyGame, please check how to install on your Linux/Windows machines
+# Setup
 
-1. Clone the repository:
+In order to use this code, you need the following:
+- Raspberry Pi (1x)
+- 7-Segment LED (1x)
+- Active Buzzer (1x)
+- LED (1x)
+- RFID (card and reader) (1x)
+- Sound module (1x)
 
-   ```bash
-   $ git clone https://github.com/sourabhv/FlapPyBird
-   ```
+After setting up your hardware, you can play the game by running `RBPFlappy.py`
 
-   or download as zip and extract.
+# Modules
 
-1. In the root directory run
+- **7-Segments LED**: Used to show the score
+- **Active Buzzer**: Used to make a sound everytime the bird passes a barrier
+- **LED**: Used to show when the user loses the game
+- **RFID**: Used to authenticate users and log in to game
+- **Sound Sensor**: Used to detect the clapping sound
 
-   ```bash
-   $ pipenv install
-   $ pipenv run python flappy.py
-   ```
-
-1. Use <kbd>&uarr;</kbd> or <kbd>Space</kbd> key to play and <kbd>Esc</kbd> to close the game.
-
-(For x64 windows, get exe [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#pygame))
-
-Notable forks
--------------
-
-- [FlappyBird Fury Mode](https://github.com/Cc618/FlapPyBird)
-- [FlappyBird Model Predictive Control](https://github.com/philzook58/FlapPyBird-MPC)
-- [FlappyBird OpenFrameworks Port](https://github.com/TheLogicMaster/ofFlappyBird)
-- [FlappyBird On Quantum Computing](https://github.com/WingCode/QuFlapPyBird)
-
-Made something awesome from FlapPyBird? Add it to the list :)
-
-
-Demo
-----------
-
-https://user-images.githubusercontent.com/2307626/130682424-9254b32d-efe0-406e-a6ea-3fb625a2df5e.mp4
-
-
-
-[pygame]: http://www.pygame.org
-[pipenv]: https://pipenv.readthedocs.io/en/latest/
+By leveraging Raspberry Pi's GPIO, we orchestrated all of these modules with Raspberry Pi. The code to handle these modules can be found in the [modules directory](</modules/>)
