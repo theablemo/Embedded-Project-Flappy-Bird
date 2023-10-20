@@ -3,7 +3,7 @@ Embedded Final Project
 
 This code is for the final project of Embedded Systems course taught by Dr.Mohsen Ansari on fall semester of 2022.
 
-Contributers:
+Collaborators:
 - [Mohammad Abolnejadian](https://github.com/theablemo)
 - [Kian Omoomi](https://github.com/kianomoomi)
 - [Mohammadali Khodabandelou]()
